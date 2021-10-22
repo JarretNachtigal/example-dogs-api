@@ -8,3 +8,23 @@ Content-Type: application/json
   "password": "dogmanpass2",
   "password_confirmation": "dogmanpass2"
 }
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "dogman2@test.com",
+  "password": "dogmanpass2"
+}
+
+### dogs create
+POST http://localhost:3000/dogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTcwMTN9.BbR033UvqXRBl8RpBRGqjpgjhB4vzTx7xF2lP3Z8Zj4
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "age": 6,
+  "breed": "big boi"
+}
